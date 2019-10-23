@@ -23,8 +23,9 @@ kubectl apply -f kubernetes/ms-svc.yaml
 
 **4. Expose the microservice outside the cluster**  
 This is performed to make the microservice accessible from outside the cluster.
+**TODO**  
 
-**5. Access the microservice**
+**5. Access the microservice**  
 Now point your browser at `http://localhost:8080`  
 or
 ```
