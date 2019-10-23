@@ -2,17 +2,13 @@ package io.vertx.example;
 
 import io.vertx.core.Vertx;
 
-
-/**
- * @author <a href="http://tfox.org">Tim Fox</a>
- */
 public class HelloWorldEmbedded {
 
   public static void main(String[] args) {
     // Create an HTTP server which simply returns "Hello World!" to each request.
     Vertx.vertx()
       .createHttpServer()
-      .requestHandler(req -> req.response().end("Hello World!"))
+      .requestHandler(req -> req.response().end("Hello World! - version 1"))
       .listen(8080, handler -> {
         if (handler.succeeded()) {
           System.out.println("http://localhost:8080/");
