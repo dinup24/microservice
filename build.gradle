@@ -11,11 +11,11 @@ repositories {
   }
 }
 
-version = '3.8.2'
+version = '1.0.0'
 sourceCompatibility = '1.8'
 
 dependencies {
-  compile "io.vertx:vertx-core:$version"
+  compile "io.vertx:vertx-core:3.8.2"
 }
 
 mainClassName = 'io.vertx.example.HelloWorldEmbedded'
