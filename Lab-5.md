@@ -28,7 +28,16 @@ public class HelloWorldEmbedded {
 ```
 
 **2. Update the version string**  
-The microservice version is defined in `build.gradle`. Update the version to `version = '1.0.0'`  
+The microservice version is defined in `build.gradle`. Update the version to `version = '2.0.0'`  
+Also update the `Dockerfile` with the following contents
+```
+FROM openjdk:8
+LABEL maintainer=dinup24
+
+COPY build/libs/microservice-2.0.0-fat.jar /app/microservice-2.0.0-fat.jar
+ENTRYPOINT ["java", "-jar", "/app/microservice-2.0.0-fat.jar"]
+EXPOSE 8080
+```
 
 **3. Build the microservice and create a new docker image**  
 ```
