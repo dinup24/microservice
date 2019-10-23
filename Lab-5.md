@@ -42,7 +42,10 @@ EXPOSE 8080
 **3. Build the microservice and create a new docker image**  
 ```
 ./gradlew shadowJar
+
 docker build -t microservice:2.0.0 .
+
 docker tag microservice:2.0.0 ${docker-id}/microservice:2.0.0
+
 docker push ${docker-id}/microservice:2.0.0
 ```
