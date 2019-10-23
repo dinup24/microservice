@@ -1,4 +1,4 @@
-= Microsercice
+= Microservice
 
 This project shows a very simple hello world Microservice project, which has a simple HTTP server which
 simply returns "Hello World!" to every request.
