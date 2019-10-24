@@ -6,10 +6,7 @@ Create a workspace directory (say `workspace`) and execute the following command
 ```
 git clone https://github.com/dinup24/microservice.git
 ```
-or
-```
-git clone git@github.com:dinup24/microservice.git
-```
+
 The source code will be present in `${workspace}/microservice` directory.
 
 **2. Build the project to create an executable jar**   
