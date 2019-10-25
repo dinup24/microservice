@@ -3,7 +3,7 @@
 **1. Ensure you are able connect to Kuberentes cluster**  
 Execute the following command to get the list of pods
 ```
-sudo kubectl get pods
+kubectl get pods
 ```
 You should see the message **No resources found.**  
 
@@ -11,7 +11,7 @@ You should see the message **No resources found.**
 The deployment configuration is in `kubernetes/ms-deployment.yaml`
 Excute the following command to apply the deployment configuration (ie., to deploy the microservice)
 ```
-sodo kubectl apply -f kubernetes/ms-deployment.yaml
+kubectl apply -f kubernetes/ms-deployment.yaml
 ```
 To check the status of deployment: `sudo kubectl get deployment`  
 To check the status of pods: `sudo kubectl get pods`
