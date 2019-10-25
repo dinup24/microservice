@@ -2,11 +2,13 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
   - http:
       paths:
-        - path: /
+        - path: /api
           backend:
-            serviceName: ms-svc
+            serviceName: ms-svc-v1
             servicePort: 8080
