@@ -8,7 +8,7 @@ Execute the following command to build a docker image with microservice execute 
 sudo docker build -t microservice:1.0.0 .
 ```
 
-To see the list of images `docker images`
+To see the list of images `sudo docker images`
 
 **2. Create a docker hub account to push docker images**  
 - Sign up at https://hub.docker.com/ using your email id
