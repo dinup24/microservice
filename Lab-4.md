@@ -25,16 +25,16 @@ kubectl apply -f kubernetes/ms-svc.yaml
 To see the list of service: `sudo kubectl get svc`
 
 **4. Expose the microservice outside the cluster**  
-Expose to the microservice outside the cluster over ingress controller. Execute the following command to create the ingress rule.
+Expose to the microservice outside the cluster via an ingress. Execute the following command to create the ingress rule.
 ```
 kubectl apply -f kubernetes/ingress.yaml
 ```
 
 **5. Access the microservice**  
-Now point your browser at `http://localhost:8080/api/greetings`  
+Now point your browser at `http://127.0.0.1/api/greetings`  
 or
 ```
-curl http://localhost:8080/api/greetings
+curl -kL http://127.0.0.1/api/greetings
 ```
 
 You should see the message **Hello World! - version 1**
