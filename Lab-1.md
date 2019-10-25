@@ -30,10 +30,10 @@ java -jar build/libs/microservice-1.0.0-fat.jar
 ```
 
 **4. Access the microservice**  
-Now point your browser at `http://localhost:8080`  
+Now point your browser at `http://localhost:8080/api/greetings`  
 or
 ```
-curl http://localhost:8080
+curl http://localhost:8080/api/greetings
 ```
 
 You should see the message **Hello World! - version 1**
