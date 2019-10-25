@@ -10,10 +10,10 @@ Use `-d` option to run the container in background.
 To see the list of running containers `docker ps`
 
 **2. Access the microservice**  
-Now point your browser at `http://localhost:8080`  
+Now point your browser at `http://localhost:8080/api/greetings`  
 or
 ```
-curl http://localhost:8080
+curl http://localhost:8080/api/greetings
 ```
 
 You should see the message **Hello World! - version 1**

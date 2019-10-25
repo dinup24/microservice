@@ -2,21 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ms-deployment-v1
-  labels:
-    app: microservice
-    version: v1
 spec:
   selector:
     matchLabels:
       app: microservice
+      version: v1
   replicas: 1
   template:
     metadata:
       labels:
         app: microservice
+        version: v1
     spec:
       containers:
       - name: microservice
-        image: microservice:1.0.0
+        image: ${docker-id}/microservice:1.0.0
         ports:
         - containerPort: 8080

@@ -1,14 +1,14 @@
 ### Lab 4
 
-**1. Ensure you are able connect to Kuberentes cluster**  
+**1. Ensure you are able connect to Kubernetes cluster**  
 Execute the following command to get the list of pods
 ```
 kubectl get pods
 ```
 You should see the message **No resources found.**  
 
-**2. Deploy the microservice in kuberentes cluster**  
-The deployment configuration is in `kubernetes/ms-deployment.yaml`
+**2. Deploy the microservice in kubernetes cluster**  
+The deployment configuration is in `kubernetes/ms-deployment.yaml`. Replace `${docker-id}` with your docker hub id.
 Excute the following command to apply the deployment configuration (ie., to deploy the microservice)
 ```
 kubectl apply -f kubernetes/ms-deployment.yaml
@@ -31,10 +31,10 @@ kubectl apply -f kubernetes/ingress.yaml
 ```
 
 **5. Access the microservice**  
-Now point your browser at `http://localhost:8080`  
+Now point your browser at `http://localhost:8080/api/greetings`  
 or
 ```
-curl http://localhost:8080
+curl http://localhost:8080/api/greetings
 ```
 
 You should see the message **Hello World! - version 1**
