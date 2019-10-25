@@ -8,10 +8,10 @@ kubectl get pods
 You should see the message **No resources found.**  
 
 **2. Deploy the microservice in kuberentes cluster**  
-The deployment configuration is in `kubernetes/ms-deployment-1.yaml`
+The deployment configuration is in `kubernetes/ms-deployment.yaml`
 Excute the following command to apply the deployment configuration (ie., to deploy the microservice)
 ```
-kubectl apply -f kubernetes/ms-deployment-1.yaml
+kubectl apply -f kubernetes/ms-deployment.yaml
 ```
 
 **3. Expose the microservice deployment using a service**  
