@@ -8,5 +8,5 @@ spec:
       paths:
         - path: /
           backend:
-            serviceName: ms-svc-v1
+            serviceName: ms-svc
             servicePort: 8080
