@@ -7,13 +7,17 @@ Create a workspace directory (say `workspace`) and execute the following command
 git clone https://github.com/dinup24/microservice.git
 ```
 
-The source code will be present in `${workspace}/microservice` directory.
+The source code will be present in `workspace/microservice` directory. 
+```
+cd microservice
+```
 
 **2. Build the project to create an executable jar**   
 The source code is present in `src` folder. Refer `src/main/java/io/vertx/example/HelloWorldEmbedded.java` java class, which contains API logic.  
 
 Execute the following command to build the executable jar
 ```
+chmod +x gradlew
 ./gradlew shadowJar
 ```
 
