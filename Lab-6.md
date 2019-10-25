@@ -2,9 +2,10 @@
 
 **1. Deploy the newer version of the microservice**  
 Update `kubernetes/ms-deployment.yaml` with version 2  
-name `ms-deployment-v1` to `ms-deployment-v2`  
-label `version: v1` to `version: v2`  
-image `microservice:1.0.0` to `microservice:2.0.0`  
+- name `ms-deployment-v1` to `ms-deployment-v2`  
+- label `version: v1` to `version: v2`  
+- image `microservice:1.0.0` to `microservice:2.0.0`  
+
 Execute the following command to deploy the version 2
 ```
 kubectl apply -f kubernetes/ms-deployment.yaml
