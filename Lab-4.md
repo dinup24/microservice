@@ -25,8 +25,10 @@ kubectl apply -f kubernetes/ms-svc.yaml
 To see the list of service: `sudo kubectl get svc`
 
 **4. Expose the microservice outside the cluster**  
-This is performed to make the microservice accessible from outside the cluster.
-**TODO**  
+Expose to the microservice outside the cluster over ingress controller. Execute the following command to create the ingress rule.
+```
+kubectl apply -f kubernetes/ingress.yaml
+```
 
 **5. Access the microservice**  
 Now point your browser at `http://localhost:8080`  
