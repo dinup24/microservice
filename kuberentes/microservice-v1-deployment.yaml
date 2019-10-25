@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ms-v1
+  labels:
+    app: microservice
+    version: v1
+spec:
+  selector:
+    matchLabels:
+      app: microservice
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: microservice
+    spec:
+      containers:
+      - name: microservice
+        image: microservice:1.0.0
+        ports:
+        - containerPort: 8080
