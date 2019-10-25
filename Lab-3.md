@@ -3,7 +3,7 @@
 **1. Start the microservice using the docker image**  
 Execute the following command to start the docker container
 ```
-docker run -it -p 8080:8080 ${docker-id}/microservice:1.0.0
+sudo docker run -it -p 8080:8080 ${docker-id}/microservice:1.0.0
 ```
 
 Use `-d` option to run the container in background.  
@@ -21,5 +21,5 @@ You should see the message **Hello World! - version 1**
 **3. Stop the microservice**  
 Exceute the following command to stop the container
 ```
-docker stop ${container-id}
+sudo docker stop ${container-id}
 ```
